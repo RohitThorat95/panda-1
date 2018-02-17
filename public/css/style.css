@@ -1,0 +1,76 @@
+.top {
+  height: 70px;
+  background-color: #fafafa;
+}
+
+#trix-toolbar-1{
+  border: 1px solid grey;
+  border-radius: 5px 5px 0 0;
+  padding-top:9px;
+  padding-left: 6px;
+  padding-right: 6px;
+  background-color: #fafafa;
+}
+
+.trix-content{
+  border: 1px solid grey;
+  border-radius:0 0 5px 5px;
+}
+
+.marginadd {
+  margin-top:40px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 90px;
+}
+
+trix-toolbar .button_group button.save::before  {
+  background-image: url('../svg/save.png') ;
+}
+
+.butadjust {
+  margin-top: 30px;
+}
+
+.outputbox {
+  border: 2px solid #fafafa;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  height: auto;
+  width: 100 vw;
+}
+.content {
+  padding: 10px;
+  overflow: hidden;
+}
+
+blockquote {
+  margin: 0 0 0 5px;
+  padding: 0 0 0 10px;
+  border-left : 5px solid #ccc;
+}
+
+pre{
+  font-family: monospace;
+  font-size: 12px;
+  margin: 0;
+  padding: 10px;
+  white-space: pre-wrap;
+  background-color: #eee;
+}
+
+.bottom {
+  bottom: 0px;
+  position:fixed;
+  width: 100%;
+  height: 70px;
+  background-color: #fafafa;
+}
+
+.bottom p{
+  margin-left: 0px!important;
+  padding:3px;
+  border: 0.5px solid grey;
+  border-radius: 3px;
+  background-color: white;
+}

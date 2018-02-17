@@ -1,0 +1,17 @@
+<div class="marginadd">
+
+  <trix-editor  spellcheck="false"  class="trix-content" ng-model="trix" angular-trix trix-initialize="trixInitialize(e, editor);" trix-change="trixChange(e, editor);" trix-selection-change="trixSelectionChange(e, editor);" trix-focus="trixFocus(e, editor);" trix-blur="trixBlur(e, editor);" trix-file-accept="trixFileAccept(e, editor);" trix-attachment-add="trixAttachmentAdd(e, editor);" trix-attachment-remove="trixAttachmentRemove(e, editor);" placeholder="Write something.."></trix-editor>
+
+  <div class="butadjust text-center">
+    <a href="#/output"><button class="btn btn-default"> Output</button></a>
+  </div>
+
+</div>
+
+
+<nav class="navbar bottom navbar-fixed-bottom">
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-default">word count</button>
+      <button type="button" class="btn btn-default">{{wordCount}}</button>
+    </div>
+</nav>
