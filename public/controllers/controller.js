@@ -17,7 +17,19 @@ app.config(['$routeProvider',function($routeProvider){
 // input controller
 app.controller('trixController', function($scope, $timeout,$http) {
 
-    $scope.trix = '';
+  $scope.trix = '';
+
+// to save the data from Ctrl + s key
+  $(window).bind('keydown', function(event) {
+    if (event.ctrlKey || event.metaKey) {
+        switch (String.fromCharCode(event.which).toLowerCase()) {
+        case 's':
+            event.preventDefault();
+            document.getElementById('butcli').onclick();
+            break;
+          }
+        }
+      });
 
 // word count
     $scope.$watch('trix', function(text) {
